@@ -1,0 +1,846 @@
+﻿*{
+	box-sizing:border-box;
+}
+body{
+	min-width: 320px;
+	margin: 0 auto;
+	font-family: "Open Sans", Arial, sans-serif;
+	color: #60606e;
+}
+h1, h2, h3, p {
+	margin: 0;
+}
+ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+a {
+	text-decoration: none;
+	color: #60606e;
+}
+input {
+	display: inline;
+	height: 48px;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 12px;
+	vertical-align: middle;
+	outline: none; 
+	-webkit-appearance: none;
+	padding: 0 0 0 30px;
+	border: none;
+	margin: 0;
+}
+input[type="radio"]{
+    display: none;
+}
+.wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 30px 15px;
+}
+.button {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	background: #ffffff;
+	border: 0;
+	padding: 0 15px;
+	color: #7beec7;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: "Open Sans", Arial, sans-serif;
+	cursor: pointer;
+}
+.button:focus {
+	outline: none;
+}
+.button:hover {
+	color: #ffffff;
+	background: #60606e;;
+	transition: all .5s ease-in-out;	
+}
+/* ---CONTACT US---*/
+.site-header {
+	background-color: #e8e8e8;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;	
+	background-image: url(img/site-hero2.jpg);
+	text-align: left;
+}
+.site-header--position {
+	display: flex;
+	justify-content: space-between;
+}
+.logo:before {
+	display: inline-block;
+	content: "";
+	width: 120px;	
+	height: 50px;
+	background-image: url(img/logo-grey--small.png);
+	background-position: 0;
+}
+.btn-menu {
+	position: absolute;
+    right: 40px;
+}
+.btn-menu:before {
+	display: inline-block;
+	content: "";
+	width: 24px;	
+	height: 24px;
+	background-image: url(img/sprite.png);
+	background-position: 0 -40px;
+	margin-bottom: 100px;   
+}
+.menu {
+	width: 33%;
+	position: absolute;
+	right: 64px;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-align: center;
+	display: none;
+	z-index: 100;
+}
+
+.menu__link {
+	display: block;
+	padding: 16px 0;
+	font-weight: 500;
+}
+.menu__link >a {
+	display: block;
+}
+.menu__link:hover {
+	background-color: rgba(96, 96, 110, .5);
+	transition: all .6s ease-in-out;
+}
+.btn-menu:hover ~ .menu, .menu:hover {
+	display:inline-block;
+	background-color: rgba(232, 232, 232, .8);
+}
+.name-page, .name-page__way {
+	margin: 0 auto;
+	font-size: 32px;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+}
+.name-page__way {
+	line-height: 40px;
+	font-size: 14px;
+	padding-bottom: 50px;
+}
+.wrap-main--content {
+	width: 100%;
+}
+.form-container {
+	display: flex;
+	flex-direction: column;
+}
+.form__name {
+	margin-bottom: 30px;
+	border: 1px solid #7beec7;
+	height: 50px;
+	position: relative;
+	text-align: left;
+}
+.form__textarea {
+	text-transform: uppercase;
+	font-size: 12px;
+	height: 150px;
+	vertical-align: middle;
+	outline: none; 
+	-webkit-appearance: none;
+	padding: 15px 0 0 30px;
+	font-family: "Open Sans", Arial, sans-serif;
+	resize: none;
+}
+.form__button{
+	display: inline-block;
+	color: #ffffff;
+	background: #7beec7;
+	font-size: 14px;
+	text-align: center;
+	width: 165px;
+}
+.contacnt-info {
+	margin-top: 50px;
+	font-size: 14px;
+	line-height: 2.143;
+}
+.contacnt-info__title {
+	margin: 20px 0;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 2.667;
+}
+.contacnt-info__text {
+	line-height: 2.143;
+	font-size: 14px;
+}
+.contacnt-info--tel {
+	transition: all .5s ease-in-out;
+}
+.contacnt-info--email {
+	display: inline-block;
+	margin-bottom: 30px;
+	font-weight: 600; 
+	transition: all .5s ease-in-out;
+}
+.contacnt-info--tel:hover, .contacnt-info--email:hover {
+	color: #7beec7;
+	transition: all .5s ease-in-out;
+}
+.contacnt-info__social {
+	display: flex;
+	justify-content: flex-start;
+}
+.contacnt-info__icons:before{
+	content: "";
+	display: inline-block;
+	width: 20px;	
+	height: 20px;
+	background-image: url(img/sprite.png);
+	margin-left: 20px;
+}
+.contacnt-info__icons--fb:before{
+	background-position: 0 0; 
+	margin-left: 0;
+	width: 15px;
+}
+.contacnt-info__icons--fb:hover:before{
+	background-position: 0 -23px; 
+}
+.contacnt-info__icons--twitter:before {
+	background-position: -25px 0; 
+}
+.contacnt-info__icons--twitter:hover:before {
+	background-position: -25px -23px; 
+}
+.contacnt-info__icons--youtube:before{
+	background-position: -60px 0; 
+}
+.contacnt-info__icons--youtube:hover:before{
+	background-position: -60px -23px; 
+}
+.contacnt-info__icons--linkedin:before{
+	background-position: -90px 0; 
+}
+.contacnt-info__icons--linkedin:hover:before{
+	background-position: -90px -23px; 
+}
+.contacnt-info__icons--pinterest:before{
+	background-position: -125px 0; 
+}
+.contacnt-info__icons--pinterest:hover:before{
+	background-position: -125px -23px; 
+}
+.contacnt-info__icons--instagram:before {	
+	background-position: -157px 0; 
+}
+.contacnt-info__icons--instagram:hover:before {	
+	background-position: -157px -23px; 
+}
+#map {
+	height: 500px;
+	width: 100%;
+	margin-bottom: 16px;
+}
+.wrap--subscription {
+	background: #7beec7;
+}
+.subscription__tour-wrap {
+	flex-basis: 100%;
+	margin: 0 32px 32px 0;
+}
+.subscription__tour-title {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.6;
+	margin-bottom: 24px;
+}
+.button--tour {
+	font-size: 14px;
+	font-weight: bold;
+	transition: all .5s ease-in-out;
+}
+.subscription__email-wrap {
+	background: #ffffff;
+	margin-top: 16px;
+	flex-basis: 100%;
+}
+.subscription__email-title {
+	margin: 16px;
+	font-size: 24px;
+	line-height: 1.5;
+}
+.subscription__email-info {
+	margin: 16px;
+	font-size: 16px;
+}
+.subscription__email {
+	margin: 16px;
+	width: calc(100% - 32px);	
+	outline: 1px solid #7beec7;
+}
+.subscription__email form {
+
+}
+.email__plh {
+	display: inline;
+	width: calc(100% - 150px);	
+	text-transform: uppercase;
+	font-size: 12px;
+	vertical-align: middle;
+	outline: none; 
+	-webkit-appearance: none;
+	padding: 0;
+	border: none;
+	line-height: 16px;
+	margin-left: 16px;
+}
+.email--btn {
+	width: 134px;
+	color: #ffffff;
+	background: #7beec7;
+	font-size: 14px;
+	text-align: center;
+	height: auto;
+}
+.wrap--footer {
+	justify-content: space-between;
+}
+.menu-footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items:stretch;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.menu-footer__item{
+	display: block;
+	padding: 16px;
+	text-align: center;
+	transition: all .5s ease-in-out;	
+}
+.menu-footer__item:hover{
+	color: #ffffff;
+	background: #7beec7;
+	transition: all .5s ease-in-out;
+}
+.contacnt-info__social--footer {
+	justify-content: space-around;
+}
+/* ---END CONTACT US---*/
+/* --- LANDING PAGE ---*/
+.site-header--landing {
+	background-image: url(img/site-hero.jpg);
+	height: 1000px;
+}
+.wrap--history {
+	margin-top: -375px;
+}
+.history__image-wrap {
+	height: 390px;
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;  
+	margin-bottom: 30px; 
+}
+.history-article--wrap {
+	text-align: center;
+	width: 100%;
+}
+.slider {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.slider-wrap {
+	margin: 100px 0;
+	text-align: center;
+}
+.slider__remark {
+	display: inline-block;
+	background-color: #7beec7; 
+	line-height: 30px;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.slider__title{
+	border: solid 10px #60606e;
+	padding: 30px;
+	margin-bottom: 30px; 
+}
+.slider__text {
+	margin: 0 auto;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 1.5;
+	width: 440px;
+}
+.title {
+	margin-bottom: 20px;
+	font-size: 30px; 
+	text-transform: uppercase;
+	padding: 0 15px;
+	text-align: center;
+}
+.title:before {
+	content: "";
+	display: inline-block;
+    background-color: #7beec7;
+    width: 60px;
+    height: 20px;
+    margin: 0 -60px -10px 0;
+ }
+.wrap--main {
+	overflow: hidden;
+	text-align: center;
+    margin: 50px auto;
+    width: 90%;
+    padding: 0;
+  }
+.history__info {
+	font-size: 16px;
+	margin-bottom: 30px;
+	line-height: 1.875;
+}
+.history-article--wrap > form {
+	text-align: right;
+}
+.why-we__info{
+	line-height: 1.714;
+	font-size: 14px;
+  	text-align: center;
+   	padding: 0 15px;
+}
+.why-we__list-wrap {
+	margin-top: 50px;
+}
+.why-we__list-icon:before{
+	content: "";
+	display: inline-block;
+	width: 45px;	
+	height: 45px;
+	background-image: url(img/sprite2.png);
+}
+.why-we__list-icon--guide:before {
+	background-position: 0 5px; 
+}
+.why-we__list-icon--route:before {
+	background-position: -47px 5px; 
+}
+.why-we__list-icon--price:before {
+	background-position: -102px 5px; 
+}
+.why-we__list-icon--client:before {
+	background-position: -150px 5px; 
+}
+.why-we__list-title {
+	margin: 20px 0 0;
+	font-size: 18px;
+	text-transform: uppercase;
+	min-height: 48px;
+}
+.why-we__list-punkts {
+	margin-bottom: 60px;
+	text-transform: uppercase;
+}
+.why-we__list-punkts > li {
+	line-height: 30px;
+	color: #999999;
+	font-size: 14px;
+}
+.youtube {
+	width: 100%;
+
+}
+.category {
+	display: flex;
+	flex-direction: column;
+}
+.albom {
+	display: none
+}
+.trekking, .bike, .boat {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 8px;
+	cursor: pointer;
+	display: inline-block;
+}
+#trekking:checked ~ .category__photo-title .trekking,
+#bike:checked ~ .category__photo-title .bike,
+#boat:checked ~ .category__photo-title .boat{
+	color: #ffffff;
+	background: #7beec7;
+	transition: all .5s ease-in-out;
+}
+#trekking:checked ~ .albom--trekking,
+#bike:checked ~ .albom--bike,
+#boat:checked ~ .albom--boat {
+	 display: block;
+	 margin-right: -15px;
+	 flex-basis: 80%;
+}
+.albom__photo {
+	height: 300px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    position: relative;
+}
+.albom__photo-toure {
+	display: none;
+}
+.albom__photo:hover .albom__photo-toure{
+	display: block;
+	background: #7beec7;
+	opacity:  0.8;
+	color: #ffffff;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	right: 0;
+	text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+/*--END LANDING--*/
+/* --TOURS--*/
+.tour-date {
+	display: inline;
+	padding: 0;
+	font-size: 14px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: #7beec7;
+	height: auto;
+
+}
+.aside-albom {
+	display: none;
+}
+.tour__img-wrap {
+	height: 250px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+.reed-more {
+	display: inline-block;
+	font-size: 14px;
+   	font-weight: bold;
+ 	text-transform: uppercase;
+ 	margin: 25px 0 65px;
+ 	line-height: 3.429
+}
+.reed-more:after {
+	content: "";
+	display: inline-block;
+	width: 14px;	
+	height: 14px;
+	background: url(img/arrow.png) no-repeat;
+	background-position: -18px 5px; 
+	margin: 0 5px;
+	transition: all .5s ease-in-out;
+}
+.reed-more:hover:after {
+	background-position: 0 5px; 
+	transition: all .5s ease-in-out;	
+}
+.reed-more:hover, .aside-albom__title:hover {
+	color: #ffffff;
+	background: #7beec7;
+	transition: all .5s ease-in-out;	
+}
+.comments-icon:before {
+	content: "";
+	display: inline-block;
+	width: 18px;	
+	height: 18px;
+	background-image: url(img/sprite2.png);
+	margin: 0 5px -2px 15px;
+	background-position: -200px 3px; 
+}
+.likes-icon:before {
+	content: "";
+	display: inline-block;
+	width: 18px;	
+	height: 18px;
+	background-image: url(img/sprite2.png);
+	margin: 0 5px 0 15px;
+	background-position: -225px 5px; 
+}
+.aside-search--width {
+	width: calc(100% - 55px);
+}
+.aside-search:after{
+	content: "";
+	display: inline-block;
+	width: 18px;	
+	height: 18px;
+	background-image: url(img/sprite2.png);
+	background-position: -270px 5px; 
+}
+.aside__title {
+	margin: 50px 0 30px;
+	font-size: 14px;
+	font-weight: bold;
+  	text-transform: uppercase;
+}
+.aside-post--tour {
+	text-align: left;
+}
+#trekking:checked ~ .aside-trekking,
+#boat:checked ~ .aside-boat,
+#bike:checked ~ .aside-bike{
+	color: #ffffff;
+	background: #7beec7;
+	border-bottom: 1px solid #60606e;
+	transition: all .5s ease-in-out;	
+}
+.aside-albom {
+	margin-top: 30px ;
+}
+.aside-albom__ture {
+	overflow: hidden;
+	margin: 10px 15px 0 10px;
+}
+.aside-albom__photo {
+	height: 80px;
+	width: 80px;
+	float: left;
+}
+.aside-albom__title {
+	text-align: left;
+	padding: 15px 0 0;
+	margin: 0 0 0 95px;
+	font-size: 14px;
+  	font-weight: bold;
+  	text-transform: uppercase;
+  	line-height: 1.286;
+}
+.post-date {
+	display: block;
+	text-align: left;
+	margin: 0 0 0 95px;
+	font-size: 12px;
+}
+.aside-category__punkts {
+	padding: 15px 15px;
+	border-bottom: 1px solid #60606e;
+	border-top: 1px solid #60606e;
+	transition: all .5s ease-in-out;
+}
+.aside-category__punkts:hover {
+	color: #ffffff;
+	background: #7beec7;
+	transform: translateX(5px);
+	margin-right: 5px;
+	margin-left: 5px;
+	overflow: hidden;
+	transition: all .5s ease-in-out;	
+}
+.tag--wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+.span__tag {
+	display: block;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 12px;
+	margin: 0 5px 5px 0;
+	text-transform: uppercase;
+	background-color: rgba(96, 96, 110, .5);
+}
+.span__tag:hover {
+	background: #7beec7;
+	color: #ffffff;
+	transition: all .5s ease-in-out;
+}
+@media (min-width: 640px) {
+	#one {
+		color: #ffffff;
+	background: #7beec7;
+	transition: all .5s ease-in-out;
+	}
+	.wrap{
+		flex-direction: row;
+		padding: 60px 40px;
+	}
+	.wrap--header {
+		flex-direction: column;
+	}
+	.form__name--container {
+		display: flex;
+	}
+	.form__name {
+		flex-grow: 1;
+		margin-right: 30px;
+	}
+	.subscription__tour-title {
+		font-size: 30px;
+	}
+	.name-page {
+		display: inline-block;
+		font-size: 36px;
+	}
+	.menu-footer{
+		flex-direction: row;
+		align-items: center;
+	}
+	.menu-footer__item{
+		padding: 10px;
+	}
+	.subscription__tour-wrap {
+		margin-bottom: 0;
+	}
+	.contacnt-info__social--footer {
+		align-items: center;
+	}
+	.contacnt-info {
+		margin-right: 30px;
+	}
+	.history__image-wrap {
+		margin-right: 30px
+	}
+	.history-article--wrap {
+		text-align: left;
+	}
+	.wrap--main {
+		flex-direction: column;
+		width: 100%;
+		padding: 60px 40px;
+		margin: 0;
+	}
+	.why-we__list-wrap--position {
+		display: flex;
+		flex-wrap: wrap;
+		text-align: left;
+	}
+	.why-we__list-block {
+		width: 50%;
+		padding-right: 50px;
+	}
+	.youtube {
+		height: 400px;
+		padding: 0;
+	}
+	.albom__wrap {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.albom__photo {
+		flex: 1 0 200px;
+    	margin: 15px;
+   		width: 330px;
+	}
+	.category {
+		flex-direction: row;
+		padding: 75px 0;
+	}
+	.category__photo-title {
+		display: flex;
+		flex-direction: column;
+		margin-right: 30px;
+		flex-basis: 20%; /*IE*/
+	}
+	.category__photo {
+		height: auto;
+		width: auto;
+	}
+	_:-moz-tree-row(hover), .category__photo { 
+		height: 100%;
+	}
+	.trekking, .bike, .boat {
+		text-align: left;
+		align-self: flex-start;
+		display: inline-block;
+	}
+	.category--wrap{
+		display: flex;
+	}
+	.albom-title {
+		width: 200px;
+		padding: 0;
+		text-align: left;
+		word-wrap: break-word; 
+	}
+	.tour-wrap {
+		flex-basis: 60%;
+		margin-right: 30px;
+	}
+	.aside--wrap {
+		flex-basis: 33%;
+	}
+	.tour__img-wrap > img{
+		width: 100%;
+	}
+	.aside__title {
+		margin-left: 15px;
+	}
+	.aside-post--tour {
+		text-align: center;
+	}
+	#map {
+		height: auto;
+	}
+}	
+@media  (min-width: 1024px) {
+	.wrap{
+		padding: 75px 40px;
+	}
+	.menu-footer__item{
+		padding: 16px;
+	}
+	.tour__img-wrap {
+		height: 350px;
+	}
+	.history__image-wrap {
+		margin-right: 130px 
+	}
+	.why-we__list-wrap {
+		display: flex;
+	}
+	.youtube{
+		width: 40%;
+		height: auto;
+	}
+	_:-ms-fullscreen, :root .youtube { height: 100%; }
+	.why-we__list-wrap--position {
+		width: 60%;
+		margin-bottom: -60px;
+	}
+	.albom__photo {
+    	flex: 1 0 300px;
+	}
+	.tour-wrap{
+		margin-right: 50px;
+	}
+}

@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8" />
+	<title>Стерті Черевики | Контакти</title>
+	<meta name="viewport" content="widdth=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+</head>
+<body>
+	<header class="site-header">
+		<div class="wrap wrap--header"> 
+			<div class="site-header--position"><a href="index.html" class="logo"></a>
+			<div class="btn-menu"></div>
+				<nav class="menu">
+				<ul>
+					<li><a class="menu__link" href="index.html">Головна</a></li>
+					<li><a class="menu__link" href="tours.html">Мандрівки</a></li>
+					<li><a class="menu__link" href="">Блог</a></li>
+					<li><a class="menu__link" href="">Про нас</a></li>
+					<li><a class="menu__link" href="contact-us.html">Контакти</a></li>
+				</ul>
+				</nav>
+			</div>
+			<h2 class="name-page">Зв'яжіться з нами</h2>
+			<p class="name-page__way"><a href="index.html">Головна</a> / <a href="contact-us.html">контакти</a></p>
+		</div>
+	</header>
+	<div class="wrap">
+			<div class="wrap-main--content">
+				<form action="#" method="POST" class="form-container">
+					<div class="form__name--container">
+						<div class="form__name ">
+							<input type="text" pattern=".{4,60}" oninvalid="this.setCustomValidity('Мінімум 4 символи')" oninput="this.setCustomValidity('')" id="name" placeholder="Ваше ім'я" required="">
+						</div>
+						<div class="form__name">
+							<input type="email" id="email" placeholder="Ваш E-mail" required="" />
+						</div> 
+					</div>
+					<div class="form__name">
+						<input type="text" id="massege" placeholder="тема" required="" />
+					</div> 
+					<textarea class="form__name form__textarea" minlength="10" 
+					  placeholder="Повідомлення" required="" ></textarea>
+					<button class="button form__button"> Підписатися</button>
+    			</form>
+	    		<div class="contacnt-info">
+	    		<h2 class="contacnt-info__title">Контакти</h2>
+	    		<p class="contacnt-info__text">Ми популяризуємо дружній до природи туризм, запрошуючи туристів мандрувати Україною.</p>
+	    		<p>м. Київ, пр. Бандери 9, БЦ Форум</p>
+	    		<p><a class="contacnt-info--tel" href="tel:+3800631234578">0631234578</a></p>
+	    		<p><a class="contacnt-info--tel" href="tel:+380676985261">0676985261</a></p>
+	    		<p><a class="contacnt-info--email" href="mailto:sterti_cherevyky@gmail.com">sterti_cherevyky@gmail.com</a></p>
+	    		<ul class="contacnt-info__social">
+	    			<li><a class="contacnt-info__icons contacnt-info__icons--fb" href="#"></a></li>
+	    			<li><a class="contacnt-info__icons contacnt-info__icons--twitter" href="#"></a></li>
+	    			<li><a class="contacnt-info__icons contacnt-info__icons--youtube" href="#"></a></li>
+	    			<li><a class="contacnt-info__icons contacnt-info__icons--linkedin" href="#"></a></li>
+	    			<li><a class="contacnt-info__icons contacnt-info__icons--pinterest" href="#"></a></li>
+	    			<li><a class="contacnt-info__icons contacnt-info__icons--instagram" href="#"></a></li>
+	    		</ul>
+				</div>
+			</div>
+			<div id="map"></div>
+   
+	</div>
+	<section class="wrap--subscription">
+		<div class="wrap">
+			<div class="subscription__tour-wrap">
+				<h3 class="subscription__tour-title">Ми вас зацікавили? Давайте подивимось на тури</h3>
+				<a href="tours.html"><button class="button button--tour" value="">Переглянути тури</button></a>
+			</div>
+			<div class="subscription__email-wrap">
+				<h3 class="subscription__email-title">Повідомити про нові тури</h3>
+				<p class="subscription__email-info">Коли у нас з'являться нові, цікаві тури, ми повідомимо вас першими. </p>
+				<div class="subscription__email">
+				<form action="#" method="POST">
+					<input type="email" placeholder="Ваш E-mail" class="email__plh" /><button class="button email--btn">Підписатися</button></form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="wrap wrap--footer">
+			<nav>
+				<ul class="menu-footer">
+					<li><a class="menu-footer__item" href="index.html">Головна</a></li>
+					<li><a class="menu-footer__item" href="tours.html">Мандрівки</a></li>
+					<li><a class="menu-footer__item" href="">Блог</a></li>
+					<li><a class="menu-footer__item" href="">Про нас</a></li>
+					<li><a class="menu-footer__item" href="contact-us.html">Контакти</a></li>
+				</ul>
+			</nav>
+   			<ul class="contacnt-info__social contacnt-info__social--footer">
+    			<li><a class="contacnt-info__icons contacnt-info__icons--fb" href="#"></a></li>
+    			<li><a class="contacnt-info__icons contacnt-info__icons--twitter" href="#"></a></li>
+    			<li><a class="contacnt-info__icons contacnt-info__icons--youtube" href="#"></a></li>
+    			<li><a class="contacnt-info__icons contacnt-info__icons--linkedin" href="#"></a></li>
+    			<li><a class="contacnt-info__icons contacnt-info__icons--pinterest" href="#"></a></li>
+    			<li><a class="contacnt-info__icons contacnt-info__icons--instagram" href="#"></a></li>
+    		</ul>			
+		</div>
+	</footer>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcJzy8ZkVq00fY9ClAJ9yw3lu8s5Qw2eA&callback=initMap">
+    </script>
+	<script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
